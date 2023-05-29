@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#toDo header {
+    width: 100%;
+    padding: 20px 30px;
+    text-align: center;
+    background-color: #adffad;
+    color: #caa1a1;
+}
+
+#toDo header input {
+    width: 50%;
+    padding: 13px;
+    margin: 11px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 0 19px #7ee27e;
+    outline: none;
+}
+
+#toDo header button {
+    border: none;
+    background-color: #c9a2a1;
+    color: white;
+    border-radius: 4px;
+    padding: 13px;
+    text-shadow: 1px 5px 5px green
+}
+
+#toDo main ul {
+    background-color: #e9d6d6;
+}
+
+#toDo main li {
+    padding: 15px;
+    color: #4f524f;
+    position: relative;
+    padding-left: 40px;
+}
+
+#toDo main li:hover {
+    background-color: #adffad;
+    color: black !important;
+
+}
+
+#toDo main li .remove {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 15px;
+    background-color: #d35a5a;
+    color: white;
+    cursor:pointer
+
+}
+
+.checked {
+    text-decoration: line-through;
+    background-color: #4f524f;
+    color: white !important;
+}
+
+.checked::before {
+    content: '\2713';
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 15px;
+
+}
